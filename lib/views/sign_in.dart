@@ -12,21 +12,14 @@ class signIn extends StatefulWidget {
 class _signInState extends State<signIn> {
   @override
   Widget build(BuildContext context) {
-    return 
-
-    MaterialApp(
-      home:
-    
-    
-    Scaffold(
+    return MaterialApp(
+        home: Scaffold(
       //backgroundColor: Colors.white
       body: SingleChildScrollView(
         child: Container(
           child: Column(
             children: <Widget>[
-              const SizedBox(
-                height: 150
-              ),
+              const SizedBox(height: 150),
               Container(
                 height: 150,
                 child: Stack(
@@ -40,7 +33,7 @@ class _signInState extends State<signIn> {
                         child: Container(
                           decoration: const BoxDecoration(
                             image: DecorationImage(
-                              image: AssetImage('images/back.png'),
+                              image: AssetImage('assets/images/back.png'),
                               fit: BoxFit.fill,
                             ),
                           ),
@@ -53,9 +46,7 @@ class _signInState extends State<signIn> {
                       height: 150,
                       child: FadeInUp(
                         duration: Duration(milliseconds: 1200),
-                        child: Container(
-                            
-                            ),
+                        child: Container(),
                       ),
                     ),
                     Positioned(
@@ -65,9 +56,7 @@ class _signInState extends State<signIn> {
                       height: 150,
                       child: FadeInUp(
                         duration: Duration(milliseconds: 1300),
-                        child: Container(
-                          
-                            ),
+                        child: Container(),
                       ),
                     ),
                     Positioned(
@@ -125,37 +114,31 @@ class _signInState extends State<signIn> {
                                 ),
                               ),
                               child: TextField(
-                                
-                               // controller: emailFieldController,
-                               
+                                // controller: emailFieldController,
+
                                 decoration: InputDecoration(
                                   border: InputBorder.none,
                                   hintText: "Email",
                                   hintStyle: TextStyle(color: Colors.grey[700]),
                                   prefixIcon: Icon(Icons.email,
-                                      color: Color(
-                                          0xFFD816B4)), 
+                                      color: Color(0xFFD816B4)),
                                 ),
                               ),
-
                             ),
                             Container(
                               padding: EdgeInsets.all(8.0),
                               child: TextField(
-                               // controller: passFieldController,
-                                obscureText: true,
+                                // controller: passFieldController,
+                                obscureText : true,
                                 decoration: InputDecoration(
                                   border: InputBorder.none,
                                   hintText: "Password",
                                   hintStyle: TextStyle(color: Colors.grey[700]),
                                   prefixIcon: Icon(Icons.lock,
-                                      color: Color(
-                                          0xFFD816B4)), 
+                                      color: Color(0xFFD816B4)),
                                 ),
                               ),
                             ),
-
-                           
                           ],
                         ),
                       ),
@@ -176,8 +159,7 @@ class _signInState extends State<signIn> {
                             gradient: LinearGradient(
                               colors: [
                                 Color.fromRGBO(143, 148, 251, 1),
-                                Color(
-                                    0xFF353EE5),
+                                Color(0xFF353EE5),
                               ],
                             ),
                           ),
